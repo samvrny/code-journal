@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Header from './components/Header';
 import Entries from "./components/Entries";
 import Contact from "./components/Contact";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
 
@@ -11,8 +12,8 @@ function App() {
   return (
     <div>
       <Header
-        selectedPage = { selectedPage }
-        setSelectedPage = { setSelectedPage }
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage}
       ></Header>
       <main>
         {selectedPage === 'Home' ? (
@@ -22,6 +23,13 @@ function App() {
         ) : (
           <Contact></Contact>
         )}
+        <BrowserRouter>
+          <Routes>
+            {/* This is where the pages routes will go. Each will have it's own route that looks something like this: */}
+            {/* <Route path="/contact" element={<Contact />} /> */}
+            {/* These will all be tied in with 'Link' Elements in not only the entries, but specific pages */}
+          </Routes>
+        </BrowserRouter>
       </main>
     </div>
   );
