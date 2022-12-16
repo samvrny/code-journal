@@ -11,26 +11,17 @@ function App() {
 
   return (
     <div>
-      <Header
-        selectedPage={selectedPage}
-        setSelectedPage={setSelectedPage}
-      ></Header>
-      <main>
-        {selectedPage === 'Home' ? (
-          <Home></Home>
-        ) : selectedPage === 'Entries' ? (
-          <Entries></Entries>
-        ) : (
-          <Contact></Contact>
-        )}
-        <BrowserRouter>
+      <BrowserRouter>
+        <Header></Header>
+        <main>
           <Routes>
-            {/* This is where the pages routes will go. Each will have it's own route that looks something like this: */}
-            {/* <Route path="/contact" element={<Contact />} /> */}
-            {/* These will all be tied in with 'Link' Elements in not only the entries, but specific pages */}
+            <Route path='/' element={<Home />} />
+            <Route path='/entries' element={<Entries />} />
+            <Route path='/contact' element={<Contact />} />
+            {/* <Route path='/' element={< />} /> */}
           </Routes>
-        </BrowserRouter>
-      </main>
+        </main>
+      </BrowserRouter>
     </div>
   );
 }

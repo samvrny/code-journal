@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Contact from "../Contact";
 import Home from "../Home";
 
@@ -10,9 +11,14 @@ function Entries() {
                 REST APIs, Fetch, MongoDB, MySQL, Express, so on and so forth!
                 Algorithms, and more
             </p>
-            <div>
-
-            </div>
+            <section>
+                <Link to='/javascript'>Javascript</Link>
+                <Link to='/css'>CSS</Link>
+                <Link to='/html'>HTML</Link>
+                <Link to='/algorithms'>Algorithms</Link>
+                <Link to='/misc'>Misc</Link>
+                <Link to='/apis'>APIs</Link>
+            </section>
         </section>
     )
 }

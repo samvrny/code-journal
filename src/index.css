@@ -27,3 +27,12 @@ code {
 .active {
   color: red;
 }
+
+.link-test {
+  color: blue;
+}
+
+.link-test:hover {
+  color: red;
+  cursor: pointer;
+}
