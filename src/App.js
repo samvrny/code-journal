@@ -5,12 +5,12 @@ import Home from "./components/Home";
 import Header from './components/Header';
 import Entries from "./components/Entries";
 import Contact from "./components/Contact";
-import Javascript from "./pages/Javascript/Javascript";
-import Html from './pages/Html/Html';
-import Css from './pages/Css/Css';
-import Algorithms from './pages/Algorithms/Algorithms';
-import Apis from './pages/Apis/Apis';
-import Misc from './pages/Misc/Misc';
+import Javascript from "./components/Javascript";
+import Html from './components/Html';
+import Css from './components/Css';
+import Algorithms from './components/Algorithms';
+import Apis from './components/Apis';
+import Misc from './components/Misc'
 
 function App() {
   return (
