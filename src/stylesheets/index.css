@@ -33,6 +33,10 @@ code {
   flex-direction: column  ;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 a {
   text-decoration: none;
 }
@@ -47,6 +51,7 @@ header {
 
 header h1 {
   margin-left: 45px;
+  font-size: 40px;
 }
 
 nav {
@@ -61,4 +66,47 @@ nav {
 
 .nav-link:hover {
   color: aqua;
+}
+
+/* HOMEPAGE STYLES */
+
+.home-body {
+  margin: 3%;
+}
+
+.home-body h1 {
+  margin-left: 15%;
+  margin-top: 125px;
+}
+
+.home-body p {
+  margin: 125px;
+}
+
+/* ENTRIES PAGE STYLES */
+
+.entries-body {
+  margin: 3%;
+}
+
+.entries-body h1 {
+  margin-left: 15%;
+  margin-top: 75px;
+}
+
+.entries-body p {
+  margin: 75px 125px 100px 125px
+}
+
+.entry-links {
+  margin: 50px;
+  text-align: center;
+}
+
+.entry-links a {
+  min-width: 350px;
+  max-width: 350px;
+  height: 175px;
+  margin: 20px auto;
+  border: 3px solid red;
 }

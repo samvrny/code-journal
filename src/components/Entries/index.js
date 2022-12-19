@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 
 function Entries() {
     return (
-        <section>
-            <h2>Entries content page!</h2>
+        <section className='entries-body'>
+            <h1>Entries content page!</h1>
             <p>So many things to put in here! Javascript, CSS, HTML, NodeJS,
                 REST APIs, Fetch, MongoDB, MySQL, Express, so on and so forth!
-                Algorithms, and more
+                Algorithms, and more. hello I just need more words to fill this out
+                so I can see what my flexbox is actually doing. Ok it appears to be working!!
             </p>
-            <section>
+            <section className='flex around wrap entry-links'>
                 <Link to='/javascript'>Javascript</Link>
                 <Link to='/css'>CSS</Link>
                 <Link to='/html'>HTML</Link>
