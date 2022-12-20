@@ -29,6 +29,10 @@ code {
   justify-content: space-between;
 }
 
+.center {
+  justify-content: center;
+}
+
 .column {
   flex-direction: column  ;
 }
@@ -39,6 +43,24 @@ code {
 
 a {
   text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 15px;
+  height: 150px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* HEADER STYLES */
@@ -85,28 +107,61 @@ nav {
 
 /* ENTRIES PAGE STYLES */
 
-.entries-body {
-  margin: 3%;
-}
-
 .entries-body h1 {
   margin-left: 15%;
   margin-top: 75px;
+  border: 3px solid red;
 }
 
 .entries-body p {
-  margin: 75px 125px 100px 125px
+  margin: 75px 125px 100px 125px;
+  border: 3px solid red;
 }
 
 .entry-links {
-  margin: 50px;
   text-align: center;
 }
 
-.entry-links a {
-  min-width: 350px;
-  max-width: 350px;
-  height: 175px;
-  margin: 20px auto;
+.entry-links div { 
+  height: 350px;
+  width: 100%;
   border: 3px solid red;
+}
+
+.link-a, .link-b {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-a {
+  align-items: flex-start;
+}
+
+.link-b {
+  align-items: flex-end;
+}
+
+/* .link-a img, .link-b img {
+  width: 320px;
+  height: 320px;
+  border-radius: 100%;
+}
+
+.link-a img {
+  margin-left: 50%;
+} */
+
+.link-a a{
+  margin: auto 0% auto 10%;
+}
+
+.link-b a {
+  margin: auto 10% auto 0%;
+}
+
+.explore-button {
+  width: 150px;
+  height: 35px;
+  border: 3px solid red;
+  border-radius: 50px;
 }
