@@ -22,27 +22,27 @@ function Entries() {
             <section className='flex around wrap entry-links'>
                 <div className='link-a javascript'>
                     {/* <img src={jspicture} /> */}
-                    <Link className='explore-button flex center' to='/javascript'>Javascript</Link>
+                    <Link className='explore-button flex center' to='/javascript'>Explore</Link>
                 </div>
                 <div className='link-b css'>
                     {/* <img src={csspicture} /> */}
-                    <Link className='explore-button flex center' to='/css'>CSS</Link>
+                    <Link className='explore-button flex center' to='/css'>Explore</Link>
                 </div>
                 <div className='link-a html'>
                     {/* <img src={htmlpicture} /> */}
-                    <Link className='explore-button flex center' to='/html'>HTML</Link>
+                    <Link className='explore-button flex center' to='/html'>Explore</Link>
                 </div>
                 <div className='link-b algorithm'>
                     {/* <img src={algopicture} /> */}
-                    <Link className='explore-button flex center' to='/algorithms'>Algorithms</Link>
+                    <Link className='explore-button flex center' to='/algorithms'>Explore</Link>
                 </div>
                 <div className='link-a misc'>
                     {/* <img src={miscpicture} /> */}
-                    <Link className='explore-button flex center' to='/misc'>Misc</Link>
+                    <Link className='explore-button flex center' to='/misc'>Explore</Link>
                 </div>
                 <div className='link-b api'>
                     {/* <img src={apipicture} /> */}
-                    <Link className='explore-button flex center' to='/apis'>APIs</Link>
+                    <Link className='explore-button flex center' to='/apis'>Explore</Link>
                 </div>
             </section>
         </section>
