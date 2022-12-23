@@ -113,17 +113,22 @@ nav {
 /* HOMEPAGE STYLES */
 
 .home-body {
-  margin: 3%;
+  background-image: url('../assets/images/background-code.jpg');
+  background-size: cover;
+  height: 100vh;
 }
 
 .home-body h1 {
+  margin: 0;
   margin-left: 15%;
-  margin-top: 125px;
+  padding-top: 75px;
+  text-shadow: 50px var(--lightGreen);
 }
 
 .home-body p {
   margin: 125px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.30);
+  background-color: var(--offWhite);
 }
 
 /* ENTRIES PAGE STYLES */
@@ -195,11 +200,6 @@ nav {
   background-color: var(--lightGreen);
 }
 
-.javascript {
-  background: linear-gradient(to right top, #eefc57, #fcd757);
-  border-top: 5px solid var(--charcoal);
-}
-
 .section-about {
   height: 85%;
   margin: auto 0 auto 0;
@@ -207,6 +207,11 @@ nav {
   border-radius: 15px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.30);
   background-color: var(--offWhite);
+}
+
+.javascript {
+  background: linear-gradient(to right top, #eefc57, #fcd757);
+  border-top: 5px solid var(--charcoal);
 }
 
 .css {
