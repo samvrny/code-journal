@@ -14,10 +14,10 @@ import Misc from './components/Misc'
 
 function App() {
   return (
-    <div>
+    <div className='root-container'>
       <BrowserRouter>
-        <Header></Header>
         <main>
+          <Header></Header>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/entries' element={<Entries />} />
