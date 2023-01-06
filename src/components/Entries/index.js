@@ -21,7 +21,7 @@ function Entries() {
     loadWebFont()
 
     return (
-        <section className='entries-body'>
+        <section className='entries-body flex column'>
             <section className='entries-opening'>
                 <h1 style={{ fontFamily: 'Bungee Shade' }}>Entries content page!</h1>
                 <p>So many things to put in here! Javascript, CSS, HTML, NodeJS,
