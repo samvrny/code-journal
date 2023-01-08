@@ -9,6 +9,7 @@
   --seaGreen: #94d1be;
   --yellowGreen: #98ce00;
   --lightGreen: #7cdf64;
+  --darkYellow: #FEC601;
   --mustard: #fcd757;
   --lightYellow: #eefc57;
   --darkOrange: #fc7a57;
@@ -16,7 +17,11 @@
   --turquoise: #16e0bd;
   --lightBlue: #0496FF;
   --indigo: #083d77;
+  --lightPink: #FCD3DE;
+  --mediumPink: #FF7B9C;
   --electricPink: #ff36ab;
+  --flameOrange: #e53d00;
+  --scarlet: #ff2e00;
   --fireRed: #ff1b1c;
   --ruby: #D81159;
   --darkRed: hsl(360, 91%, 36%);
@@ -144,11 +149,13 @@ nav {
   margin-top: 75px;
   color: var(--offWhite);
   -webkit-text-stroke: .1px black;
+  /* x axis y axis size */
   text-shadow: var(--offWhite) 0 0 30px;
 }
 
 .entries-opening p {
-  margin: 75px 125px 100px 125px;
+  margin: 100px auto;
+  width: 75%;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.30);
   border-radius: 15px;
   padding: 20px;
@@ -221,25 +228,31 @@ nav {
 
 .javascript {
   background: linear-gradient(to right top, #eefc57, #fcd757);
-  border-top: 5px solid var(--charcoal);
+  border-color: var(--darkYellow);
 }
 
 .css {
   background: linear-gradient(to left top, #3943b7, #9dd1f1);
+  border-color: var(--indigo);
 }
 
 .html {
   background: linear-gradient(to left bottom, #fc7a57, #FF4A1C);
+  border-color: var(--flameOrange);
 }
 
 .algorithm {
   background: linear-gradient(to right bottom, #98ce00, #21d19f);
+  border-color: var(--darkGreen);
 }
 
 .misc {
   background: linear-gradient(to right top, #FF1B1C, #d8315b);
+  border-color: var(--darkRed);
 }
 
 .api {
   background: linear-gradient(to left top, #9dd1f1, #ff36ab);
+  margin-bottom: 100px;
+  border-color: var(--mediumPink)
 }
