@@ -34,6 +34,15 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    min-height: 100vh;
+}
+
+.root {
+  min-height: 100vh;
+}
+
+.root-container {
+  min-height: 100%;
 }
 
 .flex {
@@ -53,7 +62,11 @@ body {
   justify-content: center;
 }
 
-.align {
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
   align-items: center;
 }
 
@@ -229,6 +242,7 @@ nav {
 .javascript {
   background: linear-gradient(to right top, #eefc57, #fcd757);
   border-color: var(--darkYellow);
+  /* box-shadow: 0 0 30px 0 var(--lightYellow); */
 }
 
 .css {
@@ -256,3 +270,38 @@ nav {
   margin-bottom: 100px;
   border-color: var(--mediumPink)
 }
+
+/* JAVSCRIPT COMPONENT STYLES */
+
+.js-body {
+  background-color: var(--charcoal);
+  min-height: 100vh;
+}
+
+.js-opening {
+  margin: 75px 0;
+  padding: 40px;
+  border-radius: 15px;
+  background-color: var(--offWhite);
+  box-shadow: 0 0px 30px 0 var(--lightYellow);
+  border: 4px solid var(--lightYellow);
+}
+
+.js-entry-holder {
+  padding: 25px;
+  width: 80%;
+}
+
+.js-entry {
+  padding: 25px;
+  width: 250px;
+  border-radius: 15px;
+  background-color: var(--offWhite);
+  box-shadow: 0 0px 30px 0 var(--lightYellow);
+  border: 4px solid var(--lightYellow);
+}
+
+.js-entry:hover {
+  box-shadow: 0 0 30px 0 var(--darkYellow);
+}
+

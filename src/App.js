@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+// IMPORT COMPONENTS BELOW
 import Home from "./components/Home";
 import Header from './components/Header';
 import Entries from "./components/Entries";
@@ -11,6 +12,13 @@ import Css from './components/Css';
 import Algorithms from './components/Algorithms';
 import Apis from './components/Apis';
 import Misc from './components/Misc'
+//end componenets
+
+//IMPORT PAGES BELOW
+
+//Javascript
+import Test from "./pages/javascript/Test";
+//end pages
 
 function App() {
   return (
@@ -28,7 +36,7 @@ function App() {
             <Route path='/algorithms' element={<Algorithms />} />
             <Route path='/apis' element={<Apis />} />
             <Route path='/misc' element={<Misc />} />
-            {/* <Route path='/' element={< />} /> */}
+            <Route path='/test-entry' element={<Test />} />
             {/* <Route path='/' element={< />} /> */}
             {/* <Route path='/' element={< />} /> */}
             {/* <Route path='/' element={< />} /> */}
