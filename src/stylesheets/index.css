@@ -144,7 +144,7 @@ nav {
   margin-top: 75px;
   color: var(--offWhite);
   -webkit-text-stroke: .1px black;
-  text-shadow: 5px var(--offWhite);
+  text-shadow: var(--offWhite) 0 0 30px;
 }
 
 .entries-opening p {

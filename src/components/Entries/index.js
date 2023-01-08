@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import WebFont from "webfontloader";
+import loadWebFont from "../../utils/webfontloader";
 
 function Entries() {
     const jspicture = require('../../assets/images/javascript.png');
@@ -10,15 +11,7 @@ function Entries() {
     const miscpicture = require('../../assets/images/misc.jpg');
     const apipicture = require('../../assets/images/api.jpg');
 
-    const loadWebFont = async () => {
-        WebFont.load({
-            google: {
-                families: ['Bungee Shade', 'Luckiest Guy']
-            }
-        });
-    }
-
-    loadWebFont()
+    loadWebFont(['Bungee Shade', 'Luckiest Guy'])
 
     return (
         <section className='entries-body flex column'>
